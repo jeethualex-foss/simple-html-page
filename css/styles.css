@@ -27,26 +27,26 @@ h3 {
     box-shadow: #2e7f9121 -1px 3px 10px 9px;
 }
 .t1 {
-    background-image: url(images/Template-CV_01.1.png);
+    background-image: url(../images/Template-CV_01.1.png);
     background-repeat: repeat-x;
     background-color: #00bace;
     vertical-align: top;
 }
 .t2 {
-    background-image: url(images/Template-CV_08.png);
+    background-image: url(../images/Template-CV_08.png);
     background-repeat: repeat-x;
     background-color: #d4d6db;
     vertical-align: top;
 
 }
 .t3 {
-    background-image: url(images/Template-CV_09.1.png);
+    background-image: url(../images/Template-CV_09.1.png);
     background-repeat: repeat-x;
     background-color: #f9f9f9;
     vertical-align: top;
 }
 .t4 {
-    background-image: url(images/pic.png);
+    background-image: url(../images/pic.png);
     background-repeat: no-repeat;
     background-color: #e7e7e7;
     vertical-align: top;
@@ -106,7 +106,7 @@ h3 {
     text-align: justify;
 }
 .t8 {
-    background-image: url(images/Template-CV_09.2.png);
+    background-image: url(../images/Template-CV_09.2.png);
     background-repeat: repeat-x;
     vertical-align: top;
 }
