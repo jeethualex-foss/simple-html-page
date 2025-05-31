@@ -1,5 +1,7 @@
+app := simple-html-page
 user :=
-#pass :=
+pass :=
+tag :=
 
 default: login
 
