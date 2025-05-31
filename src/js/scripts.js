@@ -14,8 +14,6 @@ $(document).ready(function(){
 
     console.log("Hello Jeetu");
 
-    console.log(jsonObject);
-
     printR(jsonObject);
 
     common.printF(jsonObject);
