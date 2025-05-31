@@ -5,6 +5,8 @@ tag :=
 
 default: login
 
+publish: build deploy
+
 login:
 	docker login -u $(user) -p $(pass)
 
