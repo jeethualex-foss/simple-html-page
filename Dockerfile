@@ -1,5 +1,6 @@
 FROM redhat/ubi10
-WORKDIR /
+
+USER root
 
 # Install the application dependencies
 RUN yum install httpd httpd-tools -y
@@ -8,13 +9,14 @@ RUN yum install httpd httpd-tools -y
 COPY src /var/www/html
 RUN mkdir /deployments
 COPY startup.sh /deployments
-EXPOSE 80
+RUN chmod -Rf 777 /deployments
 
 WORKDIR /deployments
-RUN ls -ltr /deployments
-# Setup an app user
-# USER 1001
-#
-# CMD ["sh","startup.sh"]
 
-CMD     ["/usr/sbin/httpd","-D","FOREGROUND"]
+# Setup an app user
+# RUN useradd -ms /bin/bash  user101
+# USER user101
+
+EXPOSE 80
+
+CMD ["sh","startup.sh"]

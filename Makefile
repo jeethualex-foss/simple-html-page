@@ -13,6 +13,7 @@ build:
 	docker push $(tag)
 
 deploy:
+	docker stop $(app) || true && docker rm $(app) || true
 	docker run --name $(app) -d -p 80:80 $(tag)
 
 debug:
