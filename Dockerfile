@@ -9,7 +9,7 @@ RUN microdnf install httpd httpd-tools -y
 # Copy in the source code
 RUN mkdir /deployments
 COPY src /var/www/html
-COPY startup.sh /deployments
+COPY bin /deployments
 RUN chmod -Rf 777 /deployments
 
 WORKDIR /deployments
