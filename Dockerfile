@@ -1,12 +1,12 @@
-FROM redhat/ubi10
+FROM redhat/ubi10-minimal
 
 USER root
 
 MAINTAINER Jeetu_Alex
 
 # Install the application dependencies
-RUN yum update -y
-RUN yum install httpd httpd-tools -y
+RUN microdnf update -y
+RUN microdnf install httpd httpd-tools -y
 
 # Copy in the source code
 RUN mkdir /deployments
