@@ -2,12 +2,15 @@ FROM redhat/ubi10
 
 USER root
 
+MAINTAINER Jeetu_Alex
+
 # Install the application dependencies
+RUN yum update -y
 RUN yum install httpd httpd-tools -y
 
 # Copy in the source code
-COPY src /var/www/html
 RUN mkdir /deployments
+COPY src /var/www/html
 COPY startup.sh /deployments
 RUN chmod -Rf 777 /deployments
 
