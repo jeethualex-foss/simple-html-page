@@ -1,19 +1,23 @@
 function printR(p) {
     console.log("Inside printR...");
-    console.log(JSON.parse(p));
+    console.log(p.items[1]);
 };
 
 const common = {
     printF: function(p) {
-        var jsonObject = JSON.parse(p);
         console.log("Inside printF...");
-        console.log(jsonObject);
-        console.log(jsonObject.glossary);
+        console.log(p.items[1]);
     }
 };
 
 $(document).ready(function(){
 
     console.log("Hello Jeetu");
+
+    console.log(jsonObject);
+
+    printR(jsonObject);
+
+    common.printF(jsonObject);
 
 });
