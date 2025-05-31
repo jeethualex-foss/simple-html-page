@@ -2,8 +2,6 @@ FROM redhat/ubi10-minimal
 
 USER root
 
-MAINTAINER Jeetu_Alex
-
 # Install the application dependencies
 RUN microdnf update -y
 RUN microdnf install httpd httpd-tools -y
