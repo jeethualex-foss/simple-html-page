@@ -6,7 +6,7 @@ function printR(p) {
 const common = {
     printF: function(p) {
         console.log("Inside printF...");
-        console.log(p.items[1]);
+        console.log(p.items[0]);
     }
 };
 
