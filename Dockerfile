@@ -10,13 +10,8 @@ RUN microdnf install httpd httpd-tools -y
 RUN mkdir /deployments
 COPY src /var/www/html
 COPY bin /deployments
-RUN chmod -Rf 777 /deployments
 
 WORKDIR /deployments
-
-# Setup an app user
-# RUN useradd -ms /bin/bash  user101
-# USER user101
 
 EXPOSE 80
 
