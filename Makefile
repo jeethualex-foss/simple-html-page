@@ -1,4 +1,10 @@
-default: hello hello1
+user :=
+#pass :=
+
+default: login
+
+login:
+	docker login -u $(user)
 
 hello:
 	@echo "Hello, World"
